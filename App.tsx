@@ -2,15 +2,15 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useEffect, useMemo, useReducer, useCallback } from "react";
 import { Alert } from "react-native";
-import Onboarding from "./screens/Onboarding";
-import Profile from "./screens/Profile";
-import SplashScreen from "./screens/SplashScreen";
-import Home from "./screens/Home";
+import Onboarding from "./src/screens/Onboarding";
+import Profile from "./src/screens/Profile";
+import SplashScreen from "./src/screens/SplashScreen";
+import Home from "./src/screens/Home";
 import { StatusBar } from "expo-status-bar";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { AuthContext } from "./contexts/AuthContext";
+import { AuthContext } from "./src/contexts/AuthContext";
 import React from "react";
 
 const Stack = createNativeStackNavigator();

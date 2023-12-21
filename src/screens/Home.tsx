@@ -15,7 +15,7 @@ import {
   getMenuItems,
   saveMenuItems,
   filterByQueryAndCategories,
-} from "../database";
+} from "../data/database";
 import Filters from "../components/Filters";
 import { getSectionListData, useUpdateEffect } from "../utils/utils";
 import AsyncStorage from "@react-native-async-storage/async-storage";
