@@ -11,6 +11,7 @@ import { StatusBar } from "expo-status-bar";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { AuthContext } from "./contexts/AuthContext";
+import React from "react";
 
 const Stack = createNativeStackNavigator();
 
@@ -38,7 +39,7 @@ export default function App({ navigation }) {
       try {
         const getProfile = await AsyncStorage.getItem("profile");
         if (getProfile !== null) {
-          profileData = getProfile;
+          profileData = JSON.parse(getProfile);
         }
       } catch (e) {
         console.error(e);

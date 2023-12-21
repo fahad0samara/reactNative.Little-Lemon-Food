@@ -22,6 +22,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import Constants from "expo-constants";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
+import React from "react";
 
 const API_URL =
   "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json";
@@ -176,7 +177,7 @@ const Home = ({ navigation }) => {
             <Image source={{ uri: profile.image }} style={styles.avatarImage} />
           ) : (
             <View style={styles.avatarEmpty}>
-              <Text style={styles.avatarEmptyText}>
+              <Text style={styles.avatarEmpty}>
                 {profile.firstName && Array.from(profile.firstName)[0]}
                 {profile.lastName && Array.from(profile.lastName)[0]}
               </Text>

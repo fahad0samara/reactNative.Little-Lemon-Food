@@ -12,7 +12,7 @@ import {
 import PagerView from "react-native-pager-view";
 import { validateEmail, validateName } from "../utils";
 import Constants from "expo-constants";
-
+import { useEffect, useState, useCallback, useMemo ,useRef,useContext} from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
@@ -55,15 +55,10 @@ const Onboarding = () => {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       onLayout={onLayoutRootView}
     >
-      <View style={styles.header}>
-        <Image
-          style={styles.logo}
-          source={require("../img/littleLemonLogo.png")}
-          accessible={true}
-          accessibilityLabel={"Little Lemon Logo"}
-        />
-      </View>
-      <Text style={styles.welcomeText}>Let us get to know you</Text>
+    
+      <Text style={styles.welcomeText}>
+        Welcome to Little Lemon!{"\n"}Let's get started.
+      </Text>
       <PagerView
         style={styles.viewPager}
         scrollEnabled={false}
@@ -193,10 +188,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   welcomeText: {
-    fontSize: 40,
+    fontSize: 30,
     paddingVertical: 60,
     fontFamily: "MarkaziText-Medium",
-    color: "#495E57",
+    color: "#f4ce14",
     textAlign: "center",
   },
   text: {
