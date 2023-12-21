@@ -1,7 +1,6 @@
 {
   "expo": {
     "name": "little-lemon-app",
-    
     "slug": "little-lemon-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,6 +26,8 @@
     },
     "web": {
       "favicon": "./assets/Logo.png"
-    }
+    },
+    "description": "The Little Lemon App - A family-owned Mediterranean restaurant app with a modern twist.",
+    "author": "Fahad"
   }
 }

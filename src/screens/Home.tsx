@@ -10,12 +10,7 @@ import {
 } from "react-native";
 import { Searchbar } from "react-native-paper";
 import debounce from "lodash.debounce";
-import {
-  createTable,
-  getMenuItems,
-  saveMenuItems,
-  filterByQueryAndCategories,
-} from "../data/database";
+
 import Filters from "../components/Filters";
 import { getSectionListData, useUpdateEffect } from "../utils/utils";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -23,6 +18,7 @@ import Constants from "expo-constants";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import React from "react";
+import { createTable, filterByQueryAndCategories, getMenuItems, saveMenuItems } from "../../database";
 
 const API_URL =
   "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json";
