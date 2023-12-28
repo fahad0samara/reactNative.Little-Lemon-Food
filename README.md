@@ -1,7 +1,6 @@
 
 
 
-# Little Lemon Food - React Native App
 
 Welcome to the Little Lemon Food React Native App repository! This mobile application showcases a Mediterranean restaurant with a modern twist, allowing users to explore the menu and place orders.
 
